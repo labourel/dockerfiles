@@ -9,11 +9,6 @@ RUN apt-get update && apt-get install -y \
   python3-pip \
   librsvg2-bin
 
-# Configure ssh
-RUN mkdir -p ~/.ssh && \
-  eval $(ssh-agent -s) && \
-  echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-
 # Install pandocfilters via pip
 RUN pip3 install pandocfilters
 
