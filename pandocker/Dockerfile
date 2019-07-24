@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
   pandoc \
   openssh-client \
   python3 \
+  python-pygments \
   python3-pip \
   librsvg2-bin
 
