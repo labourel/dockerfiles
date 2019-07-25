@@ -13,6 +13,9 @@ RUN apt-get update && apt-get install -y \
 # Install pandocfilters via pip
 RUN pip3 install pandocfilters
 
+# Install pigments
+RUN pip3 install pygments
+
 # Remove documentations
 RUN apt-get --purge remove -y .\*-doc$
 
