@@ -10,6 +10,11 @@ RUN apt-get update && apt-get install -y \
   python3-pip \
   librsvg2-bin
 
+# Install inkscape and plantuml
+RUN apt-get update && apt-get install -y \
+  plantuml \
+  inkscape
+
 # Install pandocfilters via pip
 RUN pip3 install pandocfilters
 
